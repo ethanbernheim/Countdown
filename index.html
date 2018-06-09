@@ -1,17 +1,11 @@
 <body>
   <center>
     <font size="10" color="red">
-     I WWILL SEE YOU IN:
+     I WILL SEE YOU IN:
       <p id="demo"></p>
     </font>
   </center>
   <canvas width="1000" height="200" id="myCanvas" ></canvas>
-  canvas {
-    padding: 0;
-    margin: auto;
-    display: block;
-    width: 800px;
-  }
   <script> 
     // Set the date we're counting down to
    var countDownDate = new Date("August 11, 2018 17:41:20").getTime();
@@ -43,6 +37,7 @@
    
     var canvas = document.getElementById("myCanvas");
     var ctx = canvas.getContext("2d");
+    canvas.setAttribute('style', "position: absolute;  left: 50%;margin-left:-400px; top: 50%;margin-top:-300px; border:2px solid blue");
     ctx.strokeRect(50, 75, 500, 30);
     var startDate = (new Date("June 16, 2018 09:29:56").getTime()) / 1000;
     var countDown = countDownDate / 1000;
