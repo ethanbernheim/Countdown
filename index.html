@@ -5,7 +5,7 @@
 <body>
   <center>
     <font size="10" color="red">
-     II WILL SEE YOU IN:
+     I WILL SEE YOU IN:
       <p id="demo"></p>
     </font>
   </center>
@@ -45,7 +45,7 @@
     var startDate = (new Date("June 16, 2018").getTime()) / 1000;
     var countDown = countDownDate / 1000;
     var today = now/1000;
-    var bar = Math.floor(Math.abs(today - startDate/(countDown - startDate)) * 500));
+    var bar = Math.floor(Math.abs(today - startDate)/(countDown - startDate)) * 500));
     ctx.fillStyle = "rgb(200, 0, 200)";
     ctx.fillRect(50, 75, bar, 30);
      
