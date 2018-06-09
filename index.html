@@ -2,7 +2,7 @@
   <canvas id="myCanvas" width="200" height="100"></canvas>
   <center>
     <font size="10" color="red">
-     I WILL SEE YOU IN:
+     I WILL SEEE YOU IN:
       <p id="demo"></p>
     </font>
   </center>
@@ -38,7 +38,12 @@
     
     var c = document.getElementById("myCanvas");
     var ctx = c.getContext("2d");
-    context.fillStyle = 'yellow';
-    ctx.fillRect(20,20,150,100);  
+    
+    ctx.beginPath();
+    ctx.lineWidth="4";
+    ctx.strokeStyle="green";
+    ctx.rect(30,30,50,50);
+    ctx.stroke();
+
   </script>
 </body>
