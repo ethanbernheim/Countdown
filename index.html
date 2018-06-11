@@ -1,21 +1,15 @@
 <body>
   <center>
     <font size="10" color="red">
-     I WILL SEeE YOU IN:
+     I WILL SEE YOU IN:
       <p id="demo"></p>
+      <canvas id="myCanvas" width="800" height="200"></canvas>
     </font>
   </center>
   <script> 
     // Set the date we're counting down to
    var countDownDate = new Date("August 12, 2018 17:41:20").getTime();
-    
-   var canvas = document.createElement('Canvas')
-   canvas.id = "myCanvas";
-   canvas.width = windowWidth;
-   canvas.height = 200;
-   canvas.style.border = "1px, solid";
-   canvas.position(0, 200);
-   var ctx = canvas.getContext("2d");
+   
 
    // Update the count down every 1 second
    var x = setInterval(function() {
@@ -42,6 +36,8 @@
       document.getElementById("demo").innerHTML = "I'M WITH YOU GO KISS ME!!!";
     }
    
+   var canvas = document.getElementById("myCanvas");
+   var ctx = canvas.getContext("2d");
     ctx.strokeRect(50, 75, 500, 30);
     var startDate = (new Date("June 15, 2018 23:59:59").getTime()) / 1000;
     var countDown = countDownDate / 1000;
