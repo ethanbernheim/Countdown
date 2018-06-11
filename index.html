@@ -1,7 +1,7 @@
 <body background = "https://hdwallsource.com/img/2014/2/heart-wallpaper-4460-4521-hd-wallpapers.jpg">
   <center>
     <font size="10" color="white">
-     I WILL SEE YOU IN1:
+     I WILL SEE YOU IN2:
       <p id="demo"></p>
       <div style="text-align:center">
         <canvas id="myCanvas" width="800" height="200"></canvas>
@@ -42,7 +42,7 @@
     ctx.fillStyle = "rgb(200, 0, 200)";
     ctx.fillRect(150, 75, bar, 30);
      
-     var percent = (Math.floor((today - startDate)/(countDown - startDate) * 1000)) / 10;
+     var percent = (Math.floor((today - startDate)/(countDown - startDate) * 10000)) / 100;
      var percentStr = percent + "%";
      ctx.font = "30px Arial";
      ctx.fillText(percentStr, 350,50);
