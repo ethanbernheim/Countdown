@@ -42,6 +42,11 @@
     ctx.fillStyle = "rgb(200, 0, 200)";
     ctx.fillRect(150, 75, bar, 30);
      
+     var percent = (today - startDate)/(countDown - startDate);
+     var percentStr = percent + "%";
+     ctx.font = "30px Arial";
+     ctx.fillText(percentStr,10,50);
+     
   }, 1000);  
   </script>
 </body>
