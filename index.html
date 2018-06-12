@@ -58,6 +58,7 @@
      
     ctx.fillStyle = "rgb(255, 255, 255)";
     ctx.fillRect(340, 20, 130, 35);
+    ctx.fillRect(290, 120, 200, 35);
      
     ctx.fillStyle = "rgb(200, 0, 200)";
      
@@ -66,9 +67,9 @@
      ctx.font = "30px Arial";
      ctx.fillText(percentStr, 350,50);
      
-     var repeat = (Math.floor(100 / percent) * 1000) / 1000;
+     var repeat = (Math.floor(100 / percent) * 100000) / 100000;
      var repeatStr = repeat + " more times";
-     ctx.fillText(repeatStr, 350, 150);
+     ctx.fillText(repeatStr, 300, 150);
      
   }, 1000);  
   </script>
