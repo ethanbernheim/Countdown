@@ -24,8 +24,31 @@
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
      // Display the result in the element with id="demo"
-    document.getElementById("demo").innerHTML = days + " Days " + hours + " Hours "  + minutes + 
-      " Minutes and " + seconds + " Seconds";
+     var str = days + " Day";
+     if (days != 1)
+     {
+       str += "s";
+     }
+     str += " " + hours + " Hour";
+     if (hours != 1)
+     {
+       str += "s";
+     }
+     str += " " + minutes + " Minute";
+     if (minutes != 1)
+     {
+       str += "s";
+     }
+     str += " " + seconds + " Second";
+     if (seconds != 0)
+     {
+       str += "s";
+     }
+     
+     document.getElementById("demo").innerHTML = str;
+       
+   // document.getElementById("demo").innerHTML = days + " Days " + hours + " Hours "  + minutes + 
+     // " Minutes and " + seconds + " Seconds";
    // If the count down is finished, write some text 
    if (distance < 0) {
         clearInterval(x);
